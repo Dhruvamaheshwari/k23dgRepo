@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. type selector  */
+    h3{
+        color: blueviolet;
+        background: yellowgreen;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+    }
+    p{
+        color: green;
+    }
+
+    /* 2.Attribte selector */
+    a[href="HTMLForms.html"]{
+        color: rgb(31, 146, 146);
+    }
+
+    /* 3.id selector */
+    #p1{
+        color:yellow;
+        background:rebeccapurple;;
+    }
+    #p2{
+        color: red;
+        background-color: yellow
+        ;
+    }
+
+    /* 4.Class selector */
+    .c1{
+        color: rgb(225, 124, 141);
+        background-color: gray;
+    }
+
+    /* 5.universal selector */
+    *{
+        background: rgb(221, 189, 139);
+        padding: 1%;
+    }
+    /* 6.pseudo selector */
+    h3:hover{
+        background: #000;
+    }
+
+    /* 7.comination selector */
+    .d1 p{
+        color: chartreuse;
+    }
+
+    /* group selector */
+    h2,h3{
+        background-color: darkorange;
+    }
+    </style>
+<!-- type of CSS selector
+1.type selector
+2.Attribte selector
+3.id selector
+4.Class selector
+5.universal selector
+6.pseudo selector
+7.comination selector -->
+
+
+
+</head>
+<body>
+    <h1 style="color: blue;">Front END Class - INT219 Course Code</h1>
+    <h2>Leaning CSS and Javascript</h2>
+    <h3>Leaning CSS and Javascript</h3>
+    <h4 class="c1">Leaning CSS and Javascript</h4>
+    <h5 class="c1">Leaning CSS and Javascript</h5>
+    <h6 class="c1">Leaning CSS and Javascript</h6>
+    <p id="p1">this is 1 </p>
+    <p id="p2">this is 2</p>
+    <a href="HTMLForms.html">HTML Form</a>
+    <a href="CCForms.CSS">CSS Form</a>
+    <div class="d1"><p>this is a para in div</p></div>
+    <p>paragraph out of div</p>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            /* padding: 30px; */
+            border: 2px red solid;
+            display: flex;
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            justify-content: flex-start;         /*aline the item only horizontal*/
+            align-items:center;                  /*aline the item only Verticle*/
+            /* height: 500px; */
+            min-height: 500px;                  /* min hight to adgest the hight acc. to the item */
+            flex-direction: row;
+            flex-wrap: wrap;                    /* item go to next line if browser size is small size */
+            column-gap: 40px;
+            row-gap: 30px;
+        }
+
+        .item{
+            
+            background-color: blue;
+            width: 60px;
+            height: 50px;
+            border: black 2px solid;
+            color: wheat;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 50px;
+            align-content: center;          /*content use for item in center*/
+            flex-shrink: 0;                 /*item is not shrinking if size is small*/
+            /* flex-grow: 1; */
+
+        }
+        #i1{
+            /* align-self: center; */
+            margin-right: auto;       /* aline item*/
+        }
+
+        /*till 500px property is change */
+        @media(max-width:500px){
+            .container{
+                flex-wrap: wrap;
+                background-color: burlywood;
+            }
+            #i1{
+                color: chartreuse;
+                background-color: black;
+            }
+        }
+
+        @media(min-width:600px)
+        {
+            .container{
+                background-color: blueviolet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1"> Item 1</div>
+        <div class="item"> Item 2</div>
+        <div class="item"> Item 3</div>
+        <div class="item"> Item 4</div>
+        <div class="item"> Item 5</div>
+        <!-- <div class="item"> Item 6</div>
+        <div class="item"> Item 7</div>
+        <div class="item"> Item 8</div>
+        <div class="item"> Item 9</div> -->
+    </div>
+</body>
+</html>
